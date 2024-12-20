@@ -1,0 +1,28 @@
+{
+  "savePage": "保存页面",
+  "savePageNotAvailable": "保存页面（不可用）",
+  "logout": "登出",
+  "viewSaveHistory": "查看保存历史",
+  "changePluginSettings": "更改插件设置",
+  "toggleTheme": "切换主题",
+  "openShowcasePage": "打开 Showcase 页面",
+  "openHomePage": "打开首页",
+  "clearFinishedTaskList": "清除已完成的历史任务列表",
+  "settings": {
+    "singleFileSettings": "SingleFile 设置",
+    "removeHiddenElements": "移除隐藏元素",
+    "removeUnusedStyles": "移除未使用的样式",
+    "removeUnusedFonts": "移除未使用的字体",
+    "removeImports": "移除导入",
+    "blockScripts": "拦截脚本",
+    "blockAudios": "拦截音频",
+    "blockVideos": "拦截视频",
+    "compressHTML": "压缩 HTML",
+    "removeAlternativeFonts": "移除备选字体",
+    "removeAlternativeMedias": "移除用于备选设备屏幕的样式表",
+    "removeAlternativeImages": "移除用于备选分辨率的图片",
+    "groupDuplicateImages": "分组重复图片",
+    "loadDeferredImages": "加载延迟图片",
+    "loadDeferredImagesMaxIdleTime": "加载延迟图片最大空闲时间（毫秒）"
+  }
+}

@@ -5,6 +5,7 @@ import { ArrowLeft, Check, ClockAlert, Eraser, LoaderCircle } from 'lucide-react
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@web-archive/shared/components/tooltip'
 import Browser from 'webextension-polyfill'
 import { Button } from '@web-archive/shared/components/button'
+import { useTranslation } from 'react-i18next'
 import type { PageType } from '../PopupPage'
 import type { SeriableSingleFileTask } from '~/background/processor'
 
@@ -41,6 +42,7 @@ function HistoryTaskList({ setActivePage }: { setActivePage: (tab: PageType) => 
 }
 
 function ClearHistoryTaskListButton() {
+  const { t } = useTranslation()
   function handleClick() {
     sendMessage('clear-finished-task-list', {})
   }
@@ -58,7 +60,7 @@ function ClearHistoryTaskListButton() {
           </Button>
         </TooltipTrigger>
         <TooltipContent side="left" sideOffset={20}>
-          Clear finished history task list
+          {t('clearFinishedTaskList')}
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

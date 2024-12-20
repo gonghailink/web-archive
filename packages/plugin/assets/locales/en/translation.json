@@ -1,0 +1,28 @@
+{
+  "savePage": "Save Page",
+  "savePageNotAvailable": "Save Page (Not Available)",
+  "logout": "Logout",
+  "viewSaveHistory": "View Save History",
+  "changePluginSettings": "Change Plugin Settings",
+  "toggleTheme": "Toggle Theme",
+  "openShowcasePage": "Open Showcase Page",
+  "openHomePage": "Open Home Page",
+  "clearFinishedTaskList": "Clear finished history task list",
+  "settings": {
+    "singleFileSettings": "Single File Settings",
+    "removeHiddenElements": "Remove Hidden Elements",
+    "removeUnusedStyles": "Remove Unused Styles",
+    "removeUnusedFonts": "Remove Unused Fonts",
+    "removeImports": "Remove Imports",
+    "blockScripts": "Block Scripts",
+    "blockAudios": "Block Audios",
+    "blockVideos": "Block Videos",
+    "compressHTML": "Compress HTML",
+    "removeAlternativeFonts": "Remove Alternative Fonts",
+    "removeAlternativeMedias": "Remove Alternative Medias",
+    "removeAlternativeImages": "Remove Alternative Images",
+    "groupDuplicateImages": "Group Duplicate Images",
+    "loadDeferredImages": "Load Deferred Images",
+    "loadDeferredImagesMaxIdleTime": "Load Deferred Images Max Idle Time"
+  }
+}
