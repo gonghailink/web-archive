@@ -9,6 +9,7 @@ import { useState } from 'react'
 import type { Folder as FolderType } from '@web-archive/shared/types'
 import { useRequest } from 'ahooks'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import NewFolderDialog from './new-folder-dialog'
 import EditFolderDialog from './edit-folder-dialog'
 import { deleteFolder, getAllFolder } from '~/data/folder'
@@ -32,6 +33,7 @@ interface SidebarFolderCollapseProps {
 }
 
 function SidebarFolderMenu({ openedFolder, setOpenedFolder, className }: SidebarFolderCollapseProps) {
+  const { t } = useTranslation()
   const navigate = useNavigate()
 
   const [isFoldersCollapseOpen, setIsFoldersCollapseOpen] = useState(true)
@@ -85,7 +87,7 @@ function SidebarFolderMenu({ openedFolder, setOpenedFolder, className }: Sidebar
           <SidebarMenuButton className="w-full justify-between">
             <div className="flex items-center">
               <FolderIcon className="mr-2 h-4 w-4" />
-              Folders
+              {t('homePage.folders')}
             </div>
             <ChevronDown className={cn('h-4 w-4 transition-transform', isFoldersCollapseOpen && 'rotate-180')} />
           </SidebarMenuButton>
@@ -122,7 +124,7 @@ function SidebarFolderMenu({ openedFolder, setOpenedFolder, className }: Sidebar
             <SidebarMenuItem>
               <Button variant="ghost" className="w-full justify-start" onClick={() => setNewFolderDialogOpen(true)}>
                 <Plus className="mr-2 h-4 w-4" />
-                Add Folder
+                {t('homePage.addFolder')}
               </Button>
             </SidebarMenuItem>
           </SidebarMenuSub>

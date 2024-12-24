@@ -1,0 +1,38 @@
+{
+  "common": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "settings": "Settings",
+    "save": "Save"
+  },
+  "homePage": {
+    "folders": "Folders",
+    "home": "Home",
+    "tags": "Tags",
+    "addFolder": "Add Folder",
+    "settings": "Settings",
+    "trash": "Trash",
+    "logout": "Logout",
+    "search": "Search",
+    "searchPlaceholder": "Search in current folder",
+    "totalArchivedPages": "Total Archived Pages",
+    "r2Usage": "R2 Usage"
+  },
+  "settings": {
+    "colorTheme": "Color Theme:",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "showRecentSavePage": "Show Recent Save Page"
+  },
+  "aiTag": {
+    "aiTag": "AI Tag",
+    "aiTagDesc": "Use page title and description to generate tags. You can also set preferred tags to be included in the generated tags.",
+    "serviceType": "Service Type",
+    "cloudflareDesc": "Cloudflare has a free tier, see ",
+    "cloudflarePricing": "Workers AI Pricing",
+    "generateTagLanguage": "Generate Tag Language",
+    "modelDesc": "The model name can be found in the model detail page. Such as ",
+    "preferredTag": "Preferred Tags"
+  }
+}

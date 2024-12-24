@@ -5,10 +5,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@web-archive/shared/components/switch'
 import { useTheme } from '@web-archive/shared/components/theme-provider'
 import { Settings } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import AITagSettingCollapsible from './ai-tag-setting-collapsible'
 import { useShouldShowRecent } from '~/hooks/useShouldShowRecent'
 
 function SettingDialog({ open, setOpen }: { open: boolean, setOpen: (open: boolean) => void }) {
+  const { t } = useTranslation()
   const { theme, setTheme } = useTheme()
   const { shouldShowRecent, updateShouldShowRecent } = useShouldShowRecent()
 
@@ -18,27 +20,32 @@ function SettingDialog({ open, setOpen }: { open: boolean, setOpen: (open: boole
         <DialogHeader className="mb-4">
           <DialogTitle className="flex items-center">
             <Settings className="w-6 h-6 mr-2" />
-            Setting
+            {t('common.settings')}
           </DialogTitle>
         </DialogHeader>
         <DialogDescription>
         </DialogDescription>
         <div className="space-y-4">
           <div className="flex items-center space-x-6">
-            <Label className="font-bold">Color theme: </Label>
+            <Label className="font-bold">
+              {t('settings.colorTheme')}
+            </Label>
             <Select value={theme} onValueChange={setTheme}>
               <SelectTrigger className="w-[180px]">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
+                <SelectItem value="light">{t('settings.light')}</SelectItem>
+                <SelectItem value="dark">{t('settings.dark')}</SelectItem>
+                <SelectItem value="system">{t('settings.system')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
           <div className="flex items-center space-x-6">
-            <Label className="font-bold">Show Recent Save Page: </Label>
+            <Label className="font-bold">
+              {t('settings.showRecentSavePage')}
+              {' '}
+            </Label>
             <Switch
               checked={shouldShowRecent}
               onCheckedChange={updateShouldShowRecent}

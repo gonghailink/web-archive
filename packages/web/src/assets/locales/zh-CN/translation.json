@@ -1,0 +1,38 @@
+{
+  "common": {
+    "edit": "编辑",
+    "delete": "删除",
+    "settings": "设置",
+    "save": "保存"
+  },
+  "homePage": {
+    "folders": "文件夹",
+    "home": "主页",
+    "tags": "标签",
+    "addFolder": "添加文件夹",
+    "settings": "设置",
+    "trash": "回收站",
+    "logout": "退出",
+    "search": "搜索",
+    "searchPlaceholder": "在当前文件夹中搜索",
+    "totalArchivedPages": "已收藏页面总数",
+    "r2Usage": "R2 使用情况"
+  },
+  "settings": {
+    "colorTheme": "颜色主题：",
+    "light": "明亮",
+    "dark": "黑暗",
+    "system": "系统",
+    "showRecentSavePage": "显示最近保存的页面"
+  },
+  "aiTag": {
+    "aiTag": "AI 标签",
+    "aiTagDesc": "通过页面标题和页面描述生成标签. 你还可以设置优先标签, 使生成的标签中更倾向于包含这些优先标签.",
+    "serviceType": "服务类型",
+    "cloudflareDesc": "Cloudflare 有免费套餐, 请查看 ",
+    "cloudflarePricing": "Workers AI 价格",
+    "generateTagLanguage": "生成的标签的语言",
+    "modelDesc": "模型名称可以在模型的详情页面找到. 例如 ",
+    "preferredTag": "优先标签"
+  }
+}
